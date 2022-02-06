@@ -32,6 +32,10 @@ router.delete('/:id', async (req, res) => {
   res.redirect('/')
 })
 
+//for POST, after created new Artcile, sent here for processing
+//article variables taken in all req.atrributes
+//and then save and redirect to the other web page 
+
 function saveArticleAndRedirect(path) {
   return async (req, res) => {
     let article = req.article
